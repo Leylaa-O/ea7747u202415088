@@ -1,0 +1,39 @@
+<a class="skip-link" href="#main-content">{{ 'shell.skipToContent' | translate }}</a>
+
+<mat-toolbar class="app-toolbar" role="banner">
+  <button mat-icon-button type="button" (click)="toggleSidenav()"
+          [attr.aria-label]="'shell.toggleMenu' | translate"
+          [attr.aria-expanded]="sidenavOpened()" aria-controls="app-sidenav">
+    <mat-icon aria-hidden="true">menu</mat-icon>
+  </button>
+
+  <p class="tagline">{{ 'shell.tagline' | translate }}</p>
+</mat-toolbar>
+
+<mat-sidenav-container class="shell-container">
+  <mat-sidenav id="app-sidenav" [mode]="sidenavMode()" [opened]="sidenavOpened()"
+               (openedChange)="onOpenedChange($event)">
+    <div class="sidenav-layout">
+      <nav [attr.aria-label]="'shell.mainNavigation' | translate">
+        <mat-nav-list>
+          @for (item of navigationItems; track item.route) {
+            <a mat-list-item [routerLink]="item.route" routerLinkActive="active-link"
+               #activeLink="routerLinkActive" [attr.aria-current]="activeLink.isActive ? 'page' : null">
+              <mat-icon matListItemIcon aria-hidden="true">{{ item.icon }}</mat-icon>
+              <span matListItemTitle>{{ item.labelKey | translate }}</span>
+            </a>
+          }
+        </mat-nav-list>
+      </nav>
+      <div class="sidenav-footer">
+        <app-language-switcher />
+      </div>
+    </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <main id="main-content" tabindex="-1">
+      <router-outlet />
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>

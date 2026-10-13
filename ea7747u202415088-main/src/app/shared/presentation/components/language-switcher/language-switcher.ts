@@ -7,7 +7,7 @@ import { LanguageCode, SUPPORTED_LANGUAGES } from '../../../domain/model/languag
 @Component({
   selector: 'app-language-switcher',
   imports: [MatButtonToggleModule, TranslatePipe],
-  templateUrl: './language-switcher.component.html',
+  templateUrl: './language-switcher.html',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LanguageSwitcherComponent {
@@ -17,4 +17,6 @@ export class LanguageSwitcherComponent {
   protected onLanguageChange(language: LanguageCode): void {
     this.languageStore.change(language);
   }
+
+  protected readonly LanguageStore = LanguageStore;
 }

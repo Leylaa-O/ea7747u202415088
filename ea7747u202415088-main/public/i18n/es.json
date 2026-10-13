@@ -1,0 +1,53 @@
+{
+  "shell": {
+    "tagline": "La ANA ayuda a las personas a descubrir y explorar el mundo del dinero mediante una amplia variedad de programas educativos, incluyendo su museo, biblioteca, convenciones, seminarios, publicaciones y programas de extensión.",
+    "logoAlt": "Logotipo de la American Numismatic Association",
+    "toggleMenu": "Mostrar u ocultar el menú de navegación",
+    "mainNavigation": "Navegación principal",
+    "skipToContent": "Saltar al contenido principal"
+  },
+  "nav": { "home": "Inicio", "newItem": "Nuevo objeto histórico" },
+  "language": { "label": "Idioma de la interfaz" },
+  "home": {
+    "title": "Inicio",
+    "content": "Museo Edward C Rochette.",
+    "collectionsTitle": "Colecciones históricas",
+    "loading": "Cargando colecciones"
+  },
+  "collection": {
+    "totalPrice": "Precio total",
+    "size": "Tamaño de la colección",
+    "availableSize": "Tamaño disponible",
+    "noItems": "Sin objetos históricos",
+    "itemsLabel": "Objetos históricos de {{title}}"
+  },
+  "newItem": {
+    "title": "Nuevo objeto histórico",
+    "subtitle": "Agrega objetos históricos a tu colección",
+    "collection": "Colección",
+    "collectionType": "Tipo de colección: {{type}}",
+    "coin": "Moneda",
+    "loadingCoins": "Cargando monedas...",
+    "year": "Año",
+    "price": "Precio",
+    "condition": "Condición",
+    "summary": "Resumen",
+    "legends": "Leyendas",
+    "create": "Crear",
+    "cancel": "Cancelar",
+    "errors": {
+      "required": "Este campo es obligatorio.",
+      "collectionFull": "Esta colección no tiene tamaño disponible."
+    }
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "message": "No se encontró la ruta \"{{path}}\".",
+    "back": "Volver a Inicio"
+  },
+  "errors": {
+    "loadFailed": "No se pudieron cargar los datos del museo. Verifica que la API esté en ejecución.",
+    "catalogFailed": "No se pudo cargar el catálogo de monedas. Inténtalo más tarde.",
+    "createFailed": "No se pudo registrar el objeto. Inténtalo de nuevo."
+  }
+}

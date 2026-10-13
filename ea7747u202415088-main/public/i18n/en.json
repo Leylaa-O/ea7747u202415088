@@ -1,0 +1,53 @@
+{
+  "shell": {
+    "tagline": "The ANA helps people discover and explore the world of money through its vast array of educational programs including its museum, library, conventions, seminars, publications and outreach programs.",
+    "logoAlt": "American Numismatic Association logo",
+    "toggleMenu": "Toggle navigation menu",
+    "mainNavigation": "Main navigation",
+    "skipToContent": "Skip to main content"
+  },
+  "nav": { "home": "Home", "newItem": "New Historical Object Item" },
+  "language": { "label": "Interface language" },
+  "home": {
+    "title": "Home",
+    "content": "Museum Edward C Rochette.",
+    "collectionsTitle": "Historical Collections",
+    "loading": "Loading collections"
+  },
+  "collection": {
+    "totalPrice": "Total Price",
+    "size": "Collection Size",
+    "availableSize": "Available Size",
+    "noItems": "No Historical Object",
+    "itemsLabel": "Historical objects of {{title}}"
+  },
+  "newItem": {
+    "title": "New Historical Object Item",
+    "subtitle": "Add Historical Object Items to Your Collection",
+    "collection": "Collection",
+    "collectionType": "Collection type: {{type}}",
+    "coin": "Coin",
+    "loadingCoins": "Loading coins...",
+    "year": "Year",
+    "price": "Price",
+    "condition": "Condition",
+    "summary": "Summary",
+    "legends": "Legends",
+    "create": "Create",
+    "cancel": "Cancel",
+    "errors": {
+      "required": "This field is required.",
+      "collectionFull": "This collection has no available size left."
+    }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "message": "The route \"{{path}}\" was not found.",
+    "back": "Back to Home"
+  },
+  "errors": {
+    "loadFailed": "The museum data could not be loaded. Check that the API is running.",
+    "catalogFailed": "The coin catalogue could not be loaded. Try again later.",
+    "createFailed": "The item could not be registered. Try again."
+  }
+}

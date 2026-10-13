@@ -7,7 +7,7 @@ export const environment = {
 
   reservationsPath: '/reservations',
 
-  weatherTemperatureUrl: 'https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&current=temperature_2m.',
+  weatherTemperatureUrl: 'https://api.open-meteo.com/v1/forecast?latitude=-12.0464&longitude=-77.0428&current=temperature_2m',
 
   logoApiUrl: 'https://img.logo.dev',
 

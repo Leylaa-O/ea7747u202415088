@@ -5,7 +5,7 @@ import { WeatherTemperatureResource } from './weather-temperature.resource';
 import { WeatherTemperatureResponse } from './weather-temperature.response';
 
 @Injectable({ providedIn: 'root' })
-export class CoinAssembler implements BaseAssembler<WeatherTemperature, WeatherTemperatureResource> {
+export class WeatherTemperatureAssembler implements BaseAssembler<WeatherTemperature, WeatherTemperatureResource> {
 
   toEntityFromResource(resource: WeatherTemperatureResource): WeatherTemperature {
     return new WeatherTemperature(
@@ -25,6 +25,6 @@ export class CoinAssembler implements BaseAssembler<WeatherTemperature, WeatherT
   }
 
   toEntitiesFromResponse(response: WeatherTemperatureResponse): WeatherTemperature[] {
-    return response.coins.map((resource) => this.toEntityFromResource(resource));
+    return response.weather.map((resource) => this.toEntityFromResource(resource));
   }
 }
